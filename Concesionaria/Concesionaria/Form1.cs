@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data;
 using System.Data.SqlClient;
 
 namespace Concesionaria
@@ -16,7 +17,7 @@ namespace Concesionaria
         public Form1()
         {
             InitializeComponent();
-            SqlConnection Conexion = new SqlConnection("server=192.168.56.102 ; database=WIN-VSC0F3KLS0R ;");
+            SqlConnection Conexion = new SqlConnection("Server=192.168.56.101;Database=Hola;User Id=AdminConcesionaria;Password=42558986@Gknoll;");
             Conexion.Open();
             MessageBox.Show("Se establecio la conexion.");
         }
